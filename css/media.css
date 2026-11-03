@@ -1,0 +1,135 @@
+/* =========================================
+   RESPONSIVE SYSTEM 
+============================================ */
+.hero-wrapper,
+.articles-wrapper,
+.community-wrapper,
+.footer-wrapper,
+.Authors-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.articles-card {
+    display: flex;
+    gap: 20px;
+}
+
+@media screen and (min-width: 1024px) {
+    .author-item {
+        width: 31.33%;
+        flex: 0 0 31.33%;
+    }
+
+    .hero-content {
+        width: 55%;
+        flex: 0 0 55%;
+    }
+
+    .hero-image {
+        width: 42%;
+        flex: 0 0 42%;
+    }
+
+    .articles-feed {
+        width: 65%;
+        flex: 0 0 65%;
+    }
+
+    .articles-sidebar {
+        width: 32%;
+        flex: 0 0 32%;
+        margin-top: -150px;
+        position: sticky;
+        top: 20px;
+    }
+
+    .footer-brand {
+        width: 35%;
+    }
+
+    .footer-links,
+    .footer-newsletter {
+        width: 30%;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .articles-feed {
+        width: 67%;
+    }
+
+    .articles-sidebar {
+        width: 30%;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+
+    .hero-content,
+    .hero-image,
+    .author-item,
+    .community-left-content,
+    .community-right-content,
+    .footer-links,
+    .footer-newsletter {
+        width: 48%;
+        flex: 0 0 48%;
+    }
+
+    .footer-brand {
+        width: 100%;
+    }
+
+    .articles-feed,
+    .articles-sidebar {
+        width: 100%;
+        flex: 0 0 100%;
+    }
+
+    .articles-sidebar {
+        margin-top: 50px;
+        position: static;
+    }
+}
+
+@media screen and (max-width: 767px) {
+
+    .hero-wrapper,
+    .articles-wrapper,
+    .community-wrapper,
+    .footer-wrapper,
+    .Authors-cards {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .hero-content,
+    .hero-image,
+    .articles-feed,
+    .articles-sidebar,
+    .community-left-content,
+    .community-right-content,
+    .footer-brand,
+    .footer-links,
+    .footer-newsletter,
+    .author-item {
+        width: 100%;
+    }
+
+    .articles-sidebar {
+        margin-top: 40px;
+        position: static;
+    }
+
+    .articles-card {
+        flex-direction: column;
+        gap: 15px;
+    }
+}
+@media screen and (max-width: 1000px){
+    .nav ul, .nav .sub-btn{
+        display: none;
+    }
+}
